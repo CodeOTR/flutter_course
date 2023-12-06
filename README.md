@@ -50,8 +50,13 @@ Use version in flutter-action:
           flutter-version: '3.13.6'
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter build web
+      - run: flutter build web --dart-define=environment=production
 ```
+
+.Create 2 files in .github/workflows
+- firebase-hosting-staging.yml
+- firebase-hosting-production.yml
+update trigger branches and --dart-define environment variable
 
 Push changes to GitHub => GitHub Action will deploy to Firebase Hosting
 
