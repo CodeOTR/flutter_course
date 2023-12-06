@@ -40,6 +40,10 @@ Enable Firebase CLI access in GitHub
 
 https://github.com/marketplace/actions/flutter-action
 
+`flutter --version`
+
+Use version in flutter-action:
+
 ```agsl
       - uses: subosito/flutter-action@v2
         with:
