@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "398763627338",
-    "project_id": "flutter-course-staging",
-    "storage_bucket": "flutter-course-staging.appspot.com"
+    "project_number": "639907974997",
+    "project_id": "flutter-course-production",
+    "storage_bucket": "flutter-course-production.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:398763627338:android:ef7e25da9358b33040a7b3",
+        "mobilesdk_app_id": "1:639907974997:android:5909cdaf21c5de7699a9dc",
         "android_client_info": {
           "package_name": "com.cotr.flutter_course"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBreAhyULC1lxjIOZ8vU9nINVE5MyJ-GgM"
+          "current_key": "AIzaSyD4U8EezzwQaqpgRMH98nHldiB27xQPBxQ"
         }
       ],
       "services": {
