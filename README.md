@@ -38,6 +38,21 @@ Enable Firebase CLI access in GitHub
 ? Set up the workflow to run a build script before every deploy? Yes
 ? What script should be run before every deploy? flutter build web
 
+https://github.com/marketplace/actions/flutter-action
+
+```agsl
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.6'
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter build web
+```
+
+Push changes to GitHub => GitHub Action will deploy to Firebase Hosting
+
+
+
 
 
 
