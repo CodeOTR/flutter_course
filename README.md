@@ -66,6 +66,12 @@ Push changes to GitHub production => GitHub Action will deploy to Firebase Hosti
 
 ERROR: Cannot deploy a web framework from source because the experiment
 
+(fix)[https://stackoverflow.com/questions/74426925/how-can-run-firebase-experimentsenable-webframeworks-with-github-actions]
+
+```agsl
+firebase experiments:enable webframeworks
+```
+
 
 
 
