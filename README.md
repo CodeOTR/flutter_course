@@ -58,14 +58,36 @@ Use version in flutter-action:
 - firebase-hosting-production.yml
 update trigger branches and --dart-define environment variable
 
+update `firebase.json` source:
+```agsl
+{
+  "hosting": {
+    "source": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-east1"
+    }
+  }
+}
+```
+
+ERROR: Cannot deploy a web framework from source because the experiment
+
+(fix)[https://stackoverflow.com/questions/74426925/how-can-run-firebase-experimentsenable-webframeworks-with-github-actions]
+
+```agsl
+firebase experiments:enable webframeworks
+```
+
 Create staging and production branches
 
 Push changes to GitHub staging => GitHub Action will deploy to Firebase Hosting Staging
 
 Push changes to GitHub production => GitHub Action will deploy to Firebase Hosting Production
-
-ERROR: Cannot deploy a web framework from source because the experiment
-
 
 
 
