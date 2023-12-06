@@ -58,8 +58,13 @@ Use version in flutter-action:
 - firebase-hosting-production.yml
 update trigger branches and --dart-define environment variable
 
-Push changes to GitHub => GitHub Action will deploy to Firebase Hosting
+Create staging and production branches
 
+Push changes to GitHub staging => GitHub Action will deploy to Firebase Hosting Staging
+
+Push changes to GitHub production => GitHub Action will deploy to Firebase Hosting Production
+
+ERROR: Cannot deploy a web framework from source because the experiment
 
 
 

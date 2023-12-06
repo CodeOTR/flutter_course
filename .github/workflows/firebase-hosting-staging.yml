@@ -21,5 +21,6 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_COURSE_STAGING }}'
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
           channelId: live
           projectId: flutter-course-staging
