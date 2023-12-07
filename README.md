@@ -58,11 +58,11 @@ Use version in flutter-action:
 - firebase-hosting-production.yml
 update trigger branches and --dart-define environment variable
 
-update `firebase.json` source:
+Make sure "public" is set to "build/web" in firebase.json (https://github.com/firebase/firebase-tools/issues/6085#issuecomment-1679592277):
 ```agsl
 {
   "hosting": {
-    "source": "build/web",
+    "public": "build/web",
     "ignore": [
       "firebase.json",
       "**/.*",
