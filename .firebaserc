@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "flutter-course-staging"
-  }
+    "default": "flutter-course-staging",
+    "production": "flutter-course-production"
+  },
+  "targets": {},
+  "etags": {}
 }

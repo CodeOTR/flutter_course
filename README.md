@@ -38,6 +38,15 @@ Enable Firebase CLI access in GitHub
 ? Set up the workflow to run a build script before every deploy? Yes
 ? What script should be run before every deploy? flutter build web
 
+Add production project:
+```agsl
+firebase use --add
+
+? Which project do you want to add? flutter-course-production
+? What alias do you want to use for this project? (e.g. staging) production
+
+```
+
 https://github.com/marketplace/actions/flutter-action
 
 `flutter --version`
