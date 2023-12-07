@@ -1,8 +1,12 @@
 # Basic Steps
 
+## Flutter Setup
+
 flutter create flutter_course --empty --org=com.cotr
 
 install firebase_core
+
+## Firebase Setup
 
 Create Staging Firebase project
 
@@ -38,7 +42,7 @@ Enable Firebase CLI access in GitHub
 ? Set up the workflow to run a build script before every deploy? Yes
 ? What script should be run before every deploy? flutter build web
 
-Add production project:
+Add production project with alias (https://firebase.google.com/docs/cli#project_aliases):
 ```agsl
 firebase use --add
 
@@ -46,6 +50,18 @@ firebase use --add
 ? What alias do you want to use for this project? (e.g. staging) production
 
 ```
+
+>You can associate multiple Firebase projects with the same project directory. For example, you might want to use one Firebase project for staging and another for production. By using different project environments, you can verify changes before deploying to production. The firebase use command allows you to switch between aliases as well as create new aliases.
+
+Run `firebase use` to see active project.
+
+Run `firebase use production` to switch to production project.
+
+To create Production service account:
+1. firebase use production
+2. firebase init hosting:github (https://firebase.google.com/docs/hosting/github-integration#set-up)
+
+## GitHub Action Setup
 
 https://github.com/marketplace/actions/flutter-action
 
