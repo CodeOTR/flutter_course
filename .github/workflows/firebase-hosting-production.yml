@@ -22,4 +22,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_COURSE_STAGING }}'
           channelId: live
-          projectId: flutter-course-staging
+          projectId: flutter-course-production
